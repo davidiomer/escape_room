@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape room1</title>
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Test</h1>
+    <div id="game-container">
+        <h1>Escape Room</h1>
+        <p id="timer">Tid igjen: <span id="time">300</span> sekunder</p>
+
+        <!-- Utfordring 1 -->
+        <div id="challenge1" class="challenge">
+            <h2>Utfordring 1: Dekod meldingen</h2>
+            <p>Meldingen er kodet slik at A = 1, B = 2, C = 3 ... Z = 26.</p>
+            <p>Kode: 3-1-20</p>
+            <input type="text" id="decodeInput" placeholder="Skriv inn dekodet ord">
+            <button onclick="checkDecode()">Sjekk</button>
+        </div>
+
+        <!-- Utfordring 2 -->
+        <div id="challenge2" class="challenge hidden">
+            <h2>Utfordring 2: Logisk oppgave</h2>
+            <p>En far og sønn er i en bilulykke. Sønnen blir brakt til sykehuset, men legen sier: "Jeg kan ikke operere ham, han er min sønn!". Hvordan er dette mulig?</p>
+            <input type="text" id="logicAnswer" placeholder="Skriv svaret">
+            <button onclick="checkLogic()">Sjekk</button>
+        </div>
+
+        <!-- Utfordring 3 -->
+        <div id="challenge3" class="challenge hidden">
+            <h2>Utfordring 3: Lås opp døren</h2>
+            <p>Finn riktig sekvens (3 sifre)</p>
+            <input type="text" id="lockCode" maxlength="3" placeholder="Skriv kode">
+            <button onclick="checkLock()">Lås opp</button>
+        </div>
+
+        <div id="winMessage" class="hidden">
+            <h2>GRATULERER! DU KOM DEG UT! 🎉</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
