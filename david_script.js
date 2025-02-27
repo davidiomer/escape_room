@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 let timeLeft = 300; // 5 minutter
 let timer = setInterval(updateTimer, 1000);
 
@@ -47,7 +46,6 @@ function updateTimer() {
         location.reload(); // Restarter spillet
     }
 }
-=======
 // Spørsmålene og svarene
 const questions = [
     { question: "Hilket år ble premier league grunnlagt?", answer: "1992", theme: "Fotball" },
@@ -103,4 +101,3 @@ function loadNextQuestion() {
 
 // Initialiser første spørsmål
 loadNextQuestion();
->>>>>>> Stashed changes

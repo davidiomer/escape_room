@@ -1,51 +1,3 @@
-<<<<<<< Updated upstream
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-#game-container {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    margin: auto;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-
-h1 {
-    color: red;
-}
-
-.challenge {
-    margin: 20px 0;
-    padding: 15px;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.hidden {
-    display: none;
-}
-
-input, button {
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px;
-}
-
-button {
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: darkred;
-=======
 /* Generelle stiler for siden */
 body {
     font-family: 'Arial', sans-serif;
@@ -149,5 +101,4 @@ button:hover {
     #answer {
         width: 90%;
     }
->>>>>>> Stashed changes
 }
