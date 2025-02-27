@@ -1,0 +1,104 @@
+/* Generelle stiler for siden */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c; /* Mørk bakgrunn for Escape Room-stemning */
+    color: white; /* Hvit tekst for kontrast */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container for hele spillinnholdet */
+#game-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333; /* Mørk bakgrunn for hovedinnhold */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Tittel på spill */
+h1 {
+    font-size: 3em;
+    color: #8b0000; /* Mørk rød farge for tittelen */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Spørsmålet */
+#question {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Inputfelt for svar */
+#answer {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+    border: 2px solid #8b0000; /* Rød kantlinje */
+    border-radius: 5px;
+    background-color: #444; /* Mørk bakgrunn på inputfeltet */
+    color: white; /* Hvit tekstfarge */
+}
+
+#answer::placeholder {
+    color: #ccc; /* Lysere tekstfarge for placeholder */
+}
+
+/* Sjekk svar knapp */
+button {
+    background-color: #8b0000; /* Rød bakgrunn på knapp */
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b22222; /* Lysere rød ved hover */
+}
+
+/* Resultatteksten */
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Progress bar */
+#progress {
+    width: 100%;
+    background-color: #444;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#progress-bar {
+    width: 50%; /* Sett progresjonen til 50% for demo */
+    height: 100%;
+    background-color: #8b0000; /* Rød farge for progresjon */
+    border-radius: 5px;
+}
+
+/* Responsiv design for mindre skjermer */
+@media (max-width: 600px) {
+    #game-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #answer {
+        width: 90%;
+    }
+}
