@@ -102,3 +102,8 @@ button:hover {
         width: 90%;
     }
 }
+
+.komut{
+    text-decoration: none;
+    color: white;
+}
